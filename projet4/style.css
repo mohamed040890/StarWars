@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/*Navbar*/
+
+.navbar {   
+    width: 100%;
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 50px;
+    font-size: 15px;
+    background: url(images/fancy-pants.jpg);
+    color: white;
+}
+.logo{
+    text-align: center;    
+}
+.img0{
+    height:50px;
+     width:50px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 100px;
+}
+
+u{
+    font-size: 20px;
+}
+
+u.ur{
+    text-decoration: underline red 3px;
+    }
+
+u.ub{
+    text-decoration: underline blue 3px;
+}
+     /*Fin Navbar*/
+
+
+
+.container {
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr ;
+    text-align: center;
+    grid-template-areas:
+    "item1 item2 item3 item4"
+    ;   
+    background: url(images/WallpaperDog.jpg);
+    border-top: solid white 15px ;
+    border-bottom: solid white 15px;
+}
+
+.item1 {
+    grid-area: item1;   
+    padding: 10px;   
+}
+.img1{
+    background-color: rgba(255, 255, 255, 0.476);
+    border-radius: 20px;
+    width:200px;
+    height:300px;
+    }
+
+.item2 {
+    grid-area:item2;
+    padding: 10px; 
+}
+.img2{
+    background-color: rgba(255, 255, 255, 0.476);
+    border-radius: 20px;
+    width:200px;
+    height:300px;
+}
+
+.item3 {   
+    grid-area: item3;
+    padding: 10px; 
+}
+.img3{
+    background-color: rgba(255, 255, 255, 0.476);
+    border-radius: 20px;
+    width:200px;
+    height:300px;
+}
+
+.item4 { 
+    grid-area: item4;
+    padding: 10px; 
+}
+.img4{
+    background-color: rgba(255, 255, 255, 0.476);
+    border-radius: 20px;
+    width:200px;
+    height:300px;
+}
+
+.texte{
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    background: url(images/fancy-pants.jpg);
+    color: white;
+}
+
+
+
+
+.container1 {
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr ;
+    text-align: center;
+    grid-template-areas:
+    "item5 item6 item8 item8"
+    "item5 item7 item8 item8"
+    ;   
+}
+
+.item5 {
+    grid-area: item5;
+    border: solid rgb(76, 74, 69) 1px;
+    
+}
+
+.item6 {
+    grid-area:item6;
+}
+
+.item7 {   
+    grid-area: item7;
+}
+
+.item8 { 
+    grid-area: item8;
+}
+
+h2{
+    color: orangered;
+}
+
+
+/*Footer*/
+
+.container2 {
+    width: 100%;
+    display: grid;
+    padding: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr ;
+    grid-template-areas:
+    "item9 item10 item11 item12"
+    ;   
+    background: url(images/WallpaperDog.jpg);
+    color: white;
+}
+
+.item9{
+    grid-area: item9;
+}
+
+.item10{
+    grid-area: item10;
+}
+
+.item11{
+    grid-area: item11;
+}
+
+.item12{
+    grid-area: item12;
+}
+
+.item13{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+ /*Fin Footer*/
+
+
+
+@media screen and (min-width: 600px) and (max-width:900px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    ul{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .container1 {
+        display: flex;
+        flex-wrap: wrap;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .container2 {
+        display: flex;
+        flex-wrap: wrap;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .item6{
+        margin: 5% 0
+    }
+    .item7{
+        margin: 5% 0
+    }
+    .item8{
+        margin: 5% 0
+    }
+    .item9{
+        margin: 5% 0
+    }
+    .item10{
+        margin: 5% 0
+    }
+    .item11{
+        margin: 10px
+    }
+    .item12{
+        margin: 5% 0
+    }
+
+  }
+
+
+
+
+  @media screen and (max-width: 599px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    ul{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        margin: 10% 0;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+      grid-template-columns: 1fr;
+    }
+
+    .container1 {
+        display: flex;
+        flex-wrap: wrap;
+      grid-template-columns: 1fr;
+    }
+
+    .container2 {
+        display: flex;
+        flex-wrap: wrap;
+      grid-template-columns: 1fr;
+    }
+
+    .item6{
+        margin: 5% 0
+    }
+    .item7{
+        margin: 5% 0
+    }
+    .item8{
+        margin: 5% 0
+    }
+    .item9{
+        margin: 5% 0
+    }
+    .item10{
+        margin: 5% 0
+    }
+    .item11{
+        margin: 5% 0
+    }
+    .item12{
+        margin: 5% 0
+    }
+  }
